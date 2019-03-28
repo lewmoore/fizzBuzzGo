@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func fizzBuzz(number int) string {
 	if number%15 == 0 {
 		return "FizzBuzz"
@@ -10,7 +12,7 @@ func fizzBuzz(number int) string {
 	if number%5 == 0 {
 		return "Buzz"
 	}
-	return ""
+	return fmt.Sprintf("%d", number)
 }
 
 func main() {

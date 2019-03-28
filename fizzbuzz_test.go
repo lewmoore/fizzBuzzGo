@@ -52,3 +52,12 @@ func TestFizzBuzzEqualsFizzBuzzWhenIsThirty(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestFizzBuzzEqualsItselfIfNotMultipleOfThreeOrFivwe(t *testing.T) {
+	result := fizzBuzz(1)
+	expect := "1"
+
+	if result != expect {
+		t.Fail()
+	}
+}
