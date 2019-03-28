@@ -2,8 +2,16 @@ package main
 
 import "testing"
 
-func TestFizzBuzzEqualsFizzWhenMultipleOfThree(t *testing.T) {
+func TestFizzBuzzEqualsFizzWhenIsThree(t *testing.T) {
 	result := fizzBuzz(3)
+	expect := "Fizz"
+
+	if result != expect {
+		t.Fail()
+	}
+}
+func TestFizzBuzzEqualsFizzWhenIsNine(t *testing.T) {
+	result := fizzBuzz(9)
 	expect := "Fizz"
 
 	if result != expect {
@@ -28,3 +36,5 @@ func TestFizzBuzzEqualsFizzBuzzWhenMultipleOfFiveAndThree(t *testing.T) {
 		t.Fail()
 	}
 }
+
+
