@@ -36,7 +36,7 @@ func TestFizzBuzzEqualsBuzzWhenIsOfTen(t *testing.T) {
 	}
 }
 
-func TestFizzBuzzEqualsFizzBuzzWhenMultipleOfFiveAndThree(t *testing.T) {
+func TestFizzBuzzEqualsFizzBuzzWhenIsFifteen(t *testing.T) {
 	result := fizzBuzz(15)
 	expect := "FizzBuzz"
 
@@ -44,5 +44,11 @@ func TestFizzBuzzEqualsFizzBuzzWhenMultipleOfFiveAndThree(t *testing.T) {
 		t.Fail()
 	}
 }
+func TestFizzBuzzEqualsFizzBuzzWhenIsThirty(t *testing.T) {
+	result := fizzBuzz(30)
+	expect := "FizzBuzz"
 
-
+	if result != expect {
+		t.Fail()
+	}
+}

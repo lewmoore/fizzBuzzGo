@@ -1,7 +1,7 @@
 package main
 
 func fizzBuzz(number int) string {
-	if number == 15 {
+	if number%15 == 0 {
 		return "FizzBuzz"
 	}
 	if number%3 == 0 {
